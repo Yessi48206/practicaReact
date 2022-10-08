@@ -3,12 +3,15 @@ import React from 'react';
 import { ListGroup } from 'react-bootstrap'; 
 import ItemTarea from './ItemTarea';
 
-const ListaTarea = () => {
+const ListaTarea = ({arregloTareas}) => {
     return (
         //ul
         <ListGroup>
-        
-        <ItemTarea></ItemTarea>
+        {//tarea= cada elemento del arreglo    posision=cada posicion del arreglo
+        //un bucle con map
+          arregloTareas.map((tarea,posicion)=> <ItemTarea key={ posicion } nombreTarea={tarea}></ItemTarea>)
+        }
+       
       </ListGroup>
     );
 };
