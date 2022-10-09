@@ -2,8 +2,11 @@ import FormularioTarea from "./components/FormularioTarea";
 //importar la hoja de estilo
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Container } from "react-bootstrap";
+import "./App.css";
+
 
 function App() {
+  
   return (
     <>
     <Container className="my-5 ">
@@ -17,6 +20,7 @@ function App() {
     </>
   
   );
+ 
 }
 
 export default App;
